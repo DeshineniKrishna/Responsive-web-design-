@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color: #143774;
+    font-size: 2rem;
+    /* border: 1px solid magenta; */
+    margin: 0;
+}
+
+.subtitle{
+    font-weight: 700;
+    font-size: .75rem;
+    color: #1792d2;
+    /* border: 1px solid magenta; */
+    margin: 0;
+}
+
+.container{
+    width: 90%;
+    max-width: 900px;
+    /* border: 1px solid magenta; */
+    margin: 0 auto;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+    /* text-align: center; */
+    background: #f8f8f8;
+    padding: 2em 0;
+    /* border: 1px solid magenta; */
+}
+
+@media (max-width: 675px ){
+    .container-nav{
+        flex-direction: column;
+    }
+
+    header{
+        text-align: center;
+    }
+}
+
+nav ul{
+    /* border: 1px solid magenta; */
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    /* border: 2px dotted orange; */
+    margin-left: 2em;
+}
+
+nav ul li a{
+    /* border: 3px solid green; */
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+}
+
+nav a:hover,
+nav a:focus{
+    color: #1792d2;
+
+}
+
+.current-page{
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover{
+    color: #707070;
+}
+
+@media (max-width: 675px ){
+    nav ul{
+        flex-direction: column;
+    }
+    nav li{
+        margin: 0.5em 0;
+    }
+}
